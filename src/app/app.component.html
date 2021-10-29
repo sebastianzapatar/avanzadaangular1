@@ -1,22 +1,4 @@
-<input type="text" [(ngModel)]="title"/>
-{{title}}
-<input type="number" [(ngModel)]="edad"/>
-<ul *ngIf="edad>=18">
-  <li *ngFor="let estudiante of estudiantes">
-    {{estudiante}}
-  </li>
-</ul>
-<table class="table">
-  <thead>
-    <th>id</th>
-    <th>title</th>
-    <th>Precio</th>
-    <th>Descripcion</th>
-  </thead>
-  <tr *ngFor="let product of products">
-    <td>{{product.id}}</td>
-    <td>{{product.title}}</td>
-    <td>{{product.price}}</td>
-    <td>{{product.description}}</td>
-  </tr>
-</table>
+<h1>Hola</h1>
+<app-menu></app-menu>
+<router-outlet></router-outlet>
+<h2>Adios</h2>
