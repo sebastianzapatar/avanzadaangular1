@@ -14,7 +14,7 @@ const router:Routes=[
   {path:'',component:MainComponent},
   {path:'logout',component:SalirComponent},
   {path:'insertar',component:FormularioComponent},
-
+  {path:'insertar/:id',component:FormularioComponent},
 ]
 
 @NgModule({

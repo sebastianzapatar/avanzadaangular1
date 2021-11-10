@@ -1,15 +1,11 @@
-
-import {Jefe} from './Jefe'
-export class Persona{
+export class Jefe{
     id:number;
     nombre:string;
     apellido:string;
-    jefe: Jefe;
     constructor(id:number, nombre:string,
-        apellido:string,jefe:Jefe){
+        apellido:string){
             this.id=id;
             this.nombre=nombre;
             this.apellido=apellido;
-            this.jefe=jefe;
     }
 }

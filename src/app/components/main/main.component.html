@@ -8,6 +8,7 @@
                     <th>id</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -16,7 +17,9 @@
                     <td>{{persona.nombre}}</td>
                     <td>{{persona.apellido}}</td>
                     <td><button name="eliminar" (click)="delete(persona)"
-                    class="btn btn-danger">Eliminar</button></td>
+                    class="btn btn-danger">Eliminar</button>
+                    <button name="editar" [routerLink]="['/insertar',persona.id]"
+                    class="btn btn-primary">editar</button></td>
                 </tr>
             </tbody>
 
